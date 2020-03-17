@@ -87,7 +87,7 @@ OBJECTS = ft_memset.o ft_bzero.o ft_memcpy.o ft_strlen.o ft_strcpy.o ft_strdup.o
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Wextra -Werror -c $(SOURCES) -I $(HEADER)
+	gcc -Wall -Wextra -Werror -c $(SOURCES) -I $(HEADER) -g
 	ar rcs $(NAME) $(OBJECTS)
 
 clean:
